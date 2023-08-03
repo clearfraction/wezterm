@@ -1,3 +1,5 @@
+%define raw_version %(unset https_proxy && curl -s https://api.github.com/repos/wez/wezterm/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+
 Name:           wezterm
 Version:        %(unset https_proxy && curl -s https://api.github.com/repos/wez/wezterm/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")' | sed  's/-/./g')
 Release:        1
