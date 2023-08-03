@@ -4,7 +4,7 @@ Name:           wezterm
 Version:        %(unset https_proxy && curl -s https://api.github.com/repos/wez/wezterm/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")' | sed  's/-/./g')
 Release:        1
 URL:            https://github.com/wez/wezterm
-Source0:        https://github.com/wez/wezterm/releases/download/%{raw_version}/wezterm-%{raw_version}-src.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        https://github.com/wez/wezterm/releases/download/%{raw_version}/wezterm-%{raw_version}-src.tar.gz#/%{name}-%{raw_version}.tar.gz
 Summary:        A GPU-accelerated cross-platform terminal emulator and multiplexer
 License:        Apache-2.0
 BuildRequires:  rustc
