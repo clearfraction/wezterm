@@ -42,6 +42,7 @@ install -Dm755 target/release/wezterm %{buildroot}/usr/bin/wezterm
 install -Dm755 target/release/wezterm-gui %{buildroot}/usr/bin/wezterm-gui
 install -Dm755 target/release/wezterm-mux-server %{buildroot}/usr/bin/wezterm-mux-server
 install -Dm755 target/release/strip-ansi-escapes %{buildroot}/usr/bin/strip-ansi-escapes
+strip %{buildroot}/usr/bin/*
 
 
 install -m644 assets/%{name}.desktop -pD %{buildroot}/usr/share/applications/org.wezfurlong.%{name}.desktop
