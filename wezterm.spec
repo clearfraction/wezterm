@@ -59,6 +59,7 @@ install -m644 assets/shell-completion/bash -pD %{buildroot}/usr/share/bash-compl
 install -m644 assets/shell-completion/zsh -pD %{buildroot}/usr/share/zsh/site-functions/_wezterm
 install -m644 assets/shell-completion/zsh -pD %{buildroot}/usr/share/zsh/site-functions/_wezterm-gui
 
+
 %files
 %defattr(-,root,root,-)
 /usr/bin/wezterm
